@@ -11,6 +11,301 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .montserrat-font {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="bg-white montserrat-font">
+    <header class="px-5 lg:px-20">
+      <nav>
+        <div class="navbar py-5 lg:relative">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Page</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl text-black"
+              >Hockey<span class="text-[#ff4240]">'</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-black">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Page</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <button class="btn btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+            <a class="btn bg-[#ff4240] text-white">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="px-5 lg:px-20 divide-y divide-dashed divide-black">
+      <!-- slider section -->
+      <section class="pb-16">
+        <div class="carousel w-full rounded-2xl">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/hockey 2.jpeg" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/hockey 4.jpeg" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-end lg:absolute lg:top-[410px] lg:left-64">
+          <div class="bg-black lg:w-1/2 p-7 rounded-xl space-y-4">
+            <h2 class="text-lg lg:text-xl font-bold">
+              Meet all the heroes from the field
+            </h2>
+            <p class="text-sm">
+              Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+              turpis placerat dolor. Purus urna in sit nullam proin.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Start Professional Hockeys Club -->
+      <section>
+        <div class="py-20 space-y-4 lg:w-3/4 mx-auto">
+          <h1
+            class="text-2xl lg:text-5xl font-extrabold text-black text-center"
+          >
+            Professional Hockeys Club
+          </h1>
+          <p class="text-sm text-center text-black">
+            A premier professional hockey club known for its rich history and
+            dedication to excellence, fostering top-tier talent and thrilling
+            fans with unmatched on-ice performance. Join us for an exhilarating
+            season of competitive hockey, community engagement, and
+            unforgettable moments.
+          </p>
+        </div>
+      </section>
+      <!--  End Professional Hockeys Club -->
+      <!-- start radial-progress -->
+      <section class="py-20">
+        <div class="grid gap-8 grid-cols-1 lg:grid-cols-4">
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-red-600"
+              style="--value: 87"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <h2 class="text-2xl text-black">Prayer Facility</h2>
+            <p class="text-sm text-black">
+              A serene and inclusive prayer facility offering a peaceful space
+              for reflection
+            </p>
+          </div>
+
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-green-600"
+              style="--value: 95"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <h2 class="text-2xl text-black">Experienced Coach</h2>
+            <p class="text-sm text-black">
+              A seasoned coach with a proven track record of developing talent
+              and achieving excellence
+            </p>
+          </div>
+
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-yellow-600"
+              style="--value: 90"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <h2 class="text-2xl text-black">Senior Player</h2>
+            <p class="text-sm text-black">
+              A highly skilled senior player known for exceptional performance,
+              leadership on and off the field
+            </p>
+          </div>
+
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-blue-600"
+              style="--value: 80"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <h2 class="text-2xl text-black">Training Ground</h2>
+            <p class="text-sm text-black">
+              A state-of-the-art training ground equipped with advanced
+              facilities to enhance player development
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- end radial-progress -->
+      <!-- Start Program Sections -->
+      <section class="space-y-5">
+        <div class="py-20 space-y-4 lg:w-3/4 mx-auto">
+          <h1
+            class="text-2xl lg:text-5xl font-extrabold text-black text-center"
+          >
+            Program Sections
+          </h1>
+          <p class="text-sm text-center text-black">
+            Provides an overview of the program's objectives, key highlights,
+            and expectations for participants. Sets the stage for what the
+            program aims to achieve.
+          </p>
+        </div>
+      </section>
+      <!--  End Program Sections -->
+
+      <!--  start 3 Program  -->
+      <section class="py-20 grid gap-5">
+        <!-- 1st program -->
+        <div class="card bg-base-100 shadow-xl image-full space-y-3">
+          <figure><img src="Images/2.png" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-white lg:pt-16">Junior Program</h2>
+            <p class="text-white">
+              The Junior Program nurtures young athletes, fostering skill
+              development and teamwork in a supportive environment, setting the
+              stage for future success.
+            </p>
+            <div class="card-actions">
+              <button class="btn bg-[#ff4240] text-white">Register Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd program -->
+        <div class="card bg-base-100 shadow-xl image-full space-y-3">
+          <figure><img src="Images/3.png" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-white lg:pt-12">Teenager Program</h2>
+            <p class="text-white">
+              The Teenager Program provides tailored guidance and resources to
+              teenagers, supporting personal development, skill enhancement, and
+              goal achievement during this crucial stage of growth.
+            </p>
+            <div class="card-actions">
+              <button class="btn bg-[#ff4240] text-white">Register Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd program -->
+        <div
+          class="card bg-base-100 shadow-xl image-full lg:col-span-2 space-y-3"
+        >
+          <figure><img src="Images/4.png" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-white lg:pt-48">Professional Program</h2>
+            <p class="text-white">
+              The Professional Program offers comprehensive training and
+              mentorship for aspiring athletes, providing the tools, resources,
+              and support necessary to excel at the highest levels of
+              competition in their chosen sport.
+            </p>
+            <div class="card-actions">
+              <button class="btn bg-[#ff4240] text-white">Register Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  end 3 Program  -->
+      <!-- Our New Sections -->
+      <section class="space-y-5">
+        <div class="py-20 space-y-4 lg:w-3/4 mx-auto">
+          <h1
+            class="text-2xl lg:text-5xl font-extrabold text-black text-center"
+          >
+            Our New Products
+          </h1>
+          <p class="text-sm text-center text-black">
+            Our New Products refers to a range of innovative offerings that
+            cater to diverse needs and preferences, featuring cutting-edge
+            designs, enhanced functionalities, and premium quality to elevate
+            customer experiences.
+          </p>
+        </div>
+      </section>
+      <!--  Our New Sections -->
+    </main>
+  </body>
 </html>
